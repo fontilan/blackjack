@@ -12,6 +12,7 @@ let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
 let cardsEl = document.getElementById("cards-el");
 let playerEl = document.getElementById("player-el");
+
 playerEl.textContent = player.name + ": $" + player.chips;
 
 function getRandomCard() {
@@ -25,6 +26,7 @@ function getRandomCard() {
 
 function startGame() {
   isAlive = true;
+  hasBlackjack = false;
   let firstCard = getRandomCard();
   let secondCard = getRandomCard();
   cards = [firstCard, secondCard];
