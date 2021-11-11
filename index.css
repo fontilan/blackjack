@@ -4,6 +4,7 @@ body {
   background-image: url("images/table.png");
   text-align: center;
   color: white;
+  text-shadow: 1px 1px black;
 }
 
 h1 {
